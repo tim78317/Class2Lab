@@ -18,11 +18,11 @@ public class WelcomeService {
     public String greetingTime(){
        String greeting = "";
        int compareCurrent = current.get(Calendar.HOUR_OF_DAY);
-        if(compareCurrent >= 1 && compareCurrent < 12){
+        if(compareCurrent >= 0 && compareCurrent < 12){
           greeting = "Good morning," ;
         }else if(compareCurrent >= 12 && compareCurrent < 17){
             greeting = "Good afternoon,";
-        }else if(compareCurrent >= 17 && compareCurrent > 1){
+        }else if(compareCurrent >= 17 && compareCurrent > 24){
             greeting = "Good evening,";
         }
          return greeting;

@@ -22,7 +22,7 @@ public class WelcomeService {
           greeting = "Good morning," ;
         }else if(compareCurrent >= 12 && compareCurrent < 17){
             greeting = "Good afternoon,";
-        }else if(compareCurrent >= 17 && compareCurrent > 24){
+        }else if(compareCurrent >= 17 && compareCurrent < 24){
             greeting = "Good evening,";
         }
          return greeting;
